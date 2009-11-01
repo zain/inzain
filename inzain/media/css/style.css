@@ -7,7 +7,7 @@ html
 
 body
 {
-  background: #e5ebdf url(../img/wrapper_bg.gif) top left repeat-y;
+  background: #D8CAA8 url(../img/wrapper_bg.gif) top left repeat-y;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body
 {
   margin: 2px 0 0;
   padding: 0;
-  background: #465052 url(../img/search_bg.gif) bottom left repeat-x;
+  background: #284907 url(../img/search_bg.gif) bottom left repeat-x;
   color: #FFF;
   font-weight: bold;
   line-height: .8em;
@@ -183,7 +183,7 @@ form
 {
   margin: 10px 0 0 50px !important;
   margin: 10px 0 0 25px;
-  width: 170px;
+  width: 185px;
   float: left;
   font-size: .9em;
   color: #465052;
@@ -250,7 +250,7 @@ form
 {
   float: left;
   width: 710px;
-  margin: 10px 0 0 30px;
+  margin: 0px 0px 0px 30px;
   padding: 0;
   color: #59452a;
 }
@@ -472,6 +472,10 @@ h4
   height: 1.7em;
 }
 
+#copyright img {
+    margin-top: 6px;
+}
+
 #copyright a
 {
   color: #DDA;
@@ -479,7 +483,6 @@ h4
 
 #copyright .container
 {
-
   text-align: right;
 }
 
@@ -675,3 +678,46 @@ ul
   padding-left: 30px;
 }
 
+
+.content-bubble-arrow {
+    background-image:url(http://s.twimg.com/a/1256928834/images/arr2.gif);
+    background-position:25px 0;
+    background-repeat:no-repeat;
+    padding-top:11px;
+    padding-bottom: none;
+    z-index: 5;
+    position: relative;
+}
+
+.content-bubble {
+    text-align: justify;
+    background-color: #FFF;
+    padding: 6px 10px;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #000;
+    border: 1px solid #eee;
+    margin-top: -1px;
+}
+
+.tweetinfo {
+    font-size: 0.9em;
+    color: #aaa;
+    font-weight: bold;
+    padding-top: 0.1em;
+}
+
+.followme {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.followme img {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-left: -0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 2px;
+    border: none;
+}
