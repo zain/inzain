@@ -7,7 +7,7 @@ html
 
 body
 {
-  background: #D8CAA8 url(../img/wrapper_bg.gif) top left repeat-y;
+  background: #FFEEC6 url(../img/wrapper_bg.gif) top left repeat-y;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body
 {
   margin: 2px 0 0;
   padding: 0;
-  background: #284907 url(../img/search_bg.gif) bottom left repeat-x;
+  background: #363942 url(../img/search_bg.gif) bottom left repeat-x;
   color: #FFF;
   font-weight: bold;
   line-height: .8em;
@@ -148,7 +148,7 @@ form
   padding: 10px 0 0;
   text-align: center;
   background: url(../img/tab_normal.gif) top left no-repeat;  
-  color: #7c8c9b;
+  color: #8DC948;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -252,7 +252,7 @@ form
   width: 710px;
   margin: 0px 0px 0px 30px;
   padding: 0;
-  color: #59452a;
+  color: #000;
 }
 
 #body .content .byline
@@ -317,7 +317,7 @@ h3
   font-weight: bold;
   margin: 0;
   padding: 0;
-  color: #59452a;
+  color: #363942;
   clear: both;
 }
 
@@ -340,7 +340,7 @@ h4
 
 #body a
 {
-  color: #59452a;
+  color: #284907;
 }
 
 #body h3 a
