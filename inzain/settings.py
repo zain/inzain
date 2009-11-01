@@ -55,6 +55,10 @@ ADMIN_MEDIA_PREFIX = '/admin_media/'
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'x*vd*g%#xsa%gb-9o(1u11kiyosmn4wqmssp=lo9g@s8_@7pt='
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'inzain.blog.context_processors.latest_tweet',
+)
+
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
@@ -79,4 +83,6 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    
+    'blog',
 )

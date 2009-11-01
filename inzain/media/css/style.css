@@ -694,18 +694,18 @@ ul
     text-align: justify;
     background-color: #FFF;
     padding: 6px 10px;
-    font-size: 0.9em;
-    line-height: 1em;
+    font-size: 0.85em;
+    line-height: 1.1em;
     color: #000;
     border: 1px solid #eee;
     margin-top: -1px;
 }
 
 .tweetinfo {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #aaa;
     font-weight: bold;
-    padding-top: 0.1em;
+    padding-top: 0.2em;
 }
 
 .followme {

@@ -28,7 +28,7 @@
             Zain Memon
           </h1>
           <h2>
-            {% block tagline %}it's easier than you think{% endblock tagline %}
+            {% block tagline %}knows karate, jujitsu, and five other japanese words.{% endblock tagline %}
           </h2>
         </div>
         {% block navigation %}
@@ -38,7 +38,7 @@
               <a href="index.html">About</a>
             </li>
             <li>
-              <a href="archives.html">Blog</a>
+              <a href="archives.html" class="selected">Blog</a>
             </li>
             <li>
               <a href="example.html">Contact</a>
@@ -59,9 +59,11 @@
             {% block twitter %}
             <div class="content-bubble-arrow"></div>
             <div class="content-bubble">
-              After all these years, no one could have guessed that it would be in mouth of a whale.
-              <div class="tweetinfo">tweeted 1 hour ago.</div>
+              {% for tweet in tweets %}
+              {{ tweet.text|safe|urlize }}
+              <div class="tweetinfo">tweeted {{ tweet.relative_created_at }}.</div>
               <br />
+              {% endfor %}
               <div class="followme">
                 <img src="/media/img/twitter8.png"> <a href="http://twitter.com/zainy">Follow me</a> on twitter
               </div>
