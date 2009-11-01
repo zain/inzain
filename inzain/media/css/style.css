@@ -7,7 +7,7 @@ html
 
 body
 {
-  background: #FFEEC6 url(../img/wrapper_bg.gif) top left repeat-y;
+  background: #E8D5A2 url(../img/wrapper_bg.gif) top left repeat-y;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body
 {
   margin: 2px 0 0;
   padding: 0;
-  background: #363942 url(../img/search_bg.gif) bottom left repeat-x;
+  background: #727820 url(../img/search_bg.gif) bottom left repeat-x;
   color: #FFF;
   font-weight: bold;
   line-height: .8em;
@@ -93,14 +93,14 @@ form
   padding: 5px 0 0;
   clear: right;
   color: #e5ebdf;
-  color: #FFF;
+  color: #000;
 }
 #title h1
 {
   font-size: 1.7em;
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  font-weight: bold;
 }
 #title h2
 {
@@ -109,6 +109,7 @@ form
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-style: italic;
 }
 
 #navigation
@@ -148,7 +149,7 @@ form
   padding: 10px 0 0;
   text-align: center;
   background: url(../img/tab_normal.gif) top left no-repeat;  
-  color: #8DC948;
+  color: #E8D5A2;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -164,12 +165,12 @@ form
 #navigation ul li a.selected, #navigation ul li a.selected:hover
 {
   background: url(../img/tab_selected.gif) top left no-repeat;  
-  color: #343434;
+  color: #300100;
 }
 
 #navigation ul li a.selected:hover
 {
-  color: #000;
+  color: #70674F;
 }
 
 
@@ -340,7 +341,7 @@ h4
 
 #body a
 {
-  color: #284907;
+  color: #727820;
 }
 
 #body h3 a
