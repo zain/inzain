@@ -88,5 +88,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     
-    'blog',
+    'inzain.blog',
 )
+
+try:
+    from settings_local import *
+except:
+    pass
