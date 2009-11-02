@@ -8,7 +8,10 @@
 
 {{ post.blurb }}
 
-<div class="nodeFoot"><a href="/blog/{{ post.slug }}">read more</a> &nbsp;&bull;&nbsp; <a href="/blog/{{ post.slug }}#disqus_thread"></a></div><br />
+<div class="nodeFoot">
+  <a href="/blog/{{ post.slug }}">read more</a> &nbsp;&bull;&nbsp; 
+  <a href="/blog/{{ post.slug }}#disqus_thread"></a>
+</div><br />
 {% endfor %}
 
 {% endblock content %}

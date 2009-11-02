@@ -1,5 +1,7 @@
 {% extends 'blog/base.html' %}
 
+{% block title %}{{ post.title }} | inzain.net{% endblock title %}
+
 {% block content %}
 <h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h3>
 <div class="byline">{{ post.pub_date }}</div>

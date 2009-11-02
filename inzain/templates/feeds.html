@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block navigation %}
+<div id="navigation">
+  <ul>
+    <li>
+      <a href="/">About</a>
+    </li>
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a href="/links/">Links</a>
+    </li>
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a href="/feeds/" class="selected">RSS Feed</a>
+    </li>
+  </ul>
+</div>
+{% endblock navigation %}
+
+{% block content %}
+<h3>RSS Feeds</h3>
+<p>Right now, there's only one feed, and that's the...</p>
+<ol>
+  <li><a href="/blog/feed/">Blog Feed</a>: Full text of the last ten blog entries I've made.</li>
+</ol>
+{% endblock content %}
