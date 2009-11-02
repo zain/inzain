@@ -8,7 +8,7 @@ def index(request):
 
 def archive(request):
     context = dict(posts=Post.objects.filter(completed=True))
-    return direct_to_template(request, 'blog/archive.html', context)
+    return direct_to_template(request, 'blog/archives.html', context)
 
 def blogpost(request, slug):
     post = get_object_or_404(Post, slug=slug, completed=True)

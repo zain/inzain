@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block navigation %}
+<div id="navigation">
+  <ul>
+    <li>
+      <a href="/" class="selected">About</a>
+    </li>
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a href="/links/">Links</a>
+    </li>
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a href="/blog/feeds/">RSS Feed</a>
+    </li>
+  </ul>
+</div>
+{% endblock navigation %}
+{% block content %}
+<h3>About me</h3>
+<p>I'm a coder who currently resides in sunny Silicon Valley, California. My day job is at 
+  an encryption company in Palo Alto, CA where I'm a lead developer. In my free time, I hack on 
+  Python and Django, write iPhone applications, and play poker. Check my 
+  <a href="/projects/">projects feed</a> for more on what I do.</p>
+
+<p>You can reach me via email at: 
+  <a href="mailto:zain@inzain.net">zain@inzain.net</a>.</p>
+
+<h3>About this site</h3>
+<p>The server is running 
+  <a href="http://httpd.apache.org/">Apache 2</a> (<a href="http://code.google.com/p/modwsgi/">mod_wsgi</a>) 
+  behind <a href="http://nginx.net/">nginx</a>. It is hosted by 
+  <a href="https://manage.slicehost.com/customers/new?referrer=df2730ea935736597049e32c4bfaec10">Slicehost</a> 
+  on a 256mb <a href="http://www.ubuntu.com/products/whatIsubuntu/serveredition">Ubuntu 9.10</a> 
+  slice. The back-end is powered by <a href="http://www.postgresql.org/">PostgreSQL 8</a> and 
+  caching is done by <a href="http://www.danga.com/memcached/">memcached</a>.</p>
+<p>The blog is a custom <a href="http://www.djangoproject.com/">Django</a> application that I've 
+  put on <a href="http://github.com/zain/inzain">GitHub</a>. Code highlighting is done by <a href="http://pygments.org/">pygments</a>, 
+  search is powered by <a href="http://haystacksearch.org/">Haystack</a>, and tweets are 
+  grabbed using <a href="http://code.google.com/p/python-twitter/">python-twitter</a>.</p>
+{% endblock content %}

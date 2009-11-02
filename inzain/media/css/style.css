@@ -314,12 +314,13 @@ form
 
 h3
 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: bold;
   margin: 0;
   padding: 0;
-  color: #363942;
+  color: #000;
   clear: both;
+  border-bottom: 1px dotted #333;
 }
 
 h4, h5, h6

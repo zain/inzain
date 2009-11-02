@@ -13,7 +13,7 @@ def latest_tweet(request):
     for tweet in twitter.Api().GetUserTimeline("zainy"):
         if not tweet.in_reply_to_screen_name:
             tweets.append(tweet)
-            if len(tweets) >= 3: break
+            if len(tweets) >= 1: break
     
     cache.set('tweets', tweets, 120)
 
