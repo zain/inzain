@@ -6,7 +6,7 @@
 <h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h3>
 <div class="byline">{{ post.pub_date|date:"F j, Y" }}</div>
 
-{{ post.blurb }}
+{{ post.blurb|safe }}
 
 <div class="nodeFoot">
   <a href="/blog/{{ post.slug }}">read more</a> &nbsp;&bull;&nbsp; 
