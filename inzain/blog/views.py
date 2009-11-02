@@ -3,11 +3,13 @@ from django.shortcuts import get_object_or_404
 from inzain.blog.models import Post
 
 def index(request):
-    return direct_to_template(request, 'index.html', dict(posts=Post.objects.all()[0:5]))
+    context = dict(posts=Post.objects.filter(completed=True)[0:5])
+    return direct_to_template(request, 'blog/index.html', context)
 
 def archive(request):
-    return direct_to_template(request, 'archive.html', dict(posts=Post.objects.all()))
+    context = dict(posts=Post.objects.filter(completed=True))
+    return direct_to_template(request, 'blog/archive.html', context)
 
 def blogpost(request, slug):
-    post = get_object_or_404(Post, slug=slug)
-    return direct_to_template(request, 'post.html', dict(post=post))
+    post = get_object_or_404(Post, slug=slug, completed=True)
+    return direct_to_template(request, 'blog/post.html', dict(post=post))

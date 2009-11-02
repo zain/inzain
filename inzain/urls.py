@@ -5,6 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+    (r'^$', 'django.views.generic.simple.direct_to_template', dict(template="about.html")),
     (r'^admin/', include(admin.site.urls)),
     (r'^blog/', include('inzain.blog.urls')),
 )

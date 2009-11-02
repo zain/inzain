@@ -56,6 +56,10 @@ ADMIN_MEDIA_PREFIX = '/admin_media/'
 SECRET_KEY = 'x*vd*g%#xsa%gb-9o(1u11kiyosmn4wqmssp=lo9g@s8_@7pt='
 
 TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.auth', 
+    'django.core.context_processors.debug', 
+    'django.core.context_processors.i18n', 
+    'django.core.context_processors.media',
     'inzain.blog.context_processors.latest_tweet',
 )
 

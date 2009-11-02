@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for post in posts %}
+<h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h3>
+<div class="byline">{{ post.pub_date|date:"F j, Y" }}</div>
+
+{{ post.blurb }}
+
+<div class="nodeFoot"><a href="/blog/{{ post.slug }}">read more</a> &nbsp;&bull;&nbsp; <a href="/blog/{{ post.slug }}#disqus_thread"></a></div><br />
+{% endfor %}
+
+{% endblock content %}
