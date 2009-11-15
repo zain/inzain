@@ -11,8 +11,26 @@ body
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Myraid Pro", "Trebuchet", "Trebuchet MS", Verdana, Arial, sans-serif;
+  font-family: "Myriad Pro", "Trebuchet", "Trebuchet MS", Verdana, Arial, sans-serif;
 }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-It.otf');
+  font-style: italic;
+}
+
 .wrapper
 {
   background: url(../img/bg.gif) top left repeat-x;
@@ -41,7 +59,7 @@ body
   background: #727820 url(../img/search_bg.gif) bottom left repeat-x;
   color: #FFF;
   font-weight: bold;
-  line-height: .8em;
+  line-height: 0.8em;
 }
 #searchBar .content
 {
@@ -85,6 +103,10 @@ form
   vertical-align: middle;
   border: #272727 solid;
   border-width: 2px 2px 2px;
+}
+
+.icon img {
+    border: none;
 }
 
 #title
@@ -146,7 +168,7 @@ form
   width: 119px;
   height: 34px;
   margin: 0;
-  padding: 10px 0 0;
+  padding: 13px 0 0;
   text-align: center;
   background: url(../img/tab_normal.gif) top left no-repeat;  
   color: #E8D5A2;
@@ -268,6 +290,7 @@ form
 {
   margin: 0;
   padding: 0 0 1em;
+  line-height: 1.4em;
 }
 
 #body .content .nodeFoot
@@ -316,7 +339,7 @@ h3
 {
   font-size: 1.2em;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 5px 0;
   padding: 0;
   color: #000;
   clear: both;
@@ -343,6 +366,7 @@ h4
 #body a
 {
   color: #727820;
+  text-decoration: none;
 }
 
 #body h3 a
@@ -696,7 +720,7 @@ ul
     background-color: #FFF;
     padding: 6px 10px;
     font-size: 0.85em;
-    line-height: 1.1em;
+    line-height: 1.2em;
     color: #000;
     border: 1px solid #eee;
     margin-top: -1px;
@@ -704,8 +728,8 @@ ul
 
 .tweetinfo {
     font-size: 0.8em;
-    color: #aaa;
-    font-weight: bold;
+    color: #888;
+    font-style: italic;
     padding-top: 0.2em;
 }
 
