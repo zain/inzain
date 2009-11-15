@@ -3,15 +3,13 @@
 {% block content %}
 
 {% for post in posts %}
-<h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h3>
-<div class="byline">{{ post.pub_date|date:"F j, Y" }}</div>
+<h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a>
+  <div class="byline">{{ post.pub_date|date:"F j, Y" }}</div></h3>
 
-{{ post.blurb|safe }}
-
-<div class="nodeFoot">
-  <a href="/blog/{{ post.slug }}">read more</a> &nbsp;&bull;&nbsp; 
-  <a href="/blog/{{ post.slug }}#disqus_thread"></a>
-</div><br />
+<div class="postbody">{{ post.blurb|safe }} &nbsp; 
+  <a href="/blog/{{ post.slug }}" class="readmore">read more&hellip;</a>
+</div>
+<br /><br />
 {% endfor %}
 
 {% endblock content %}

@@ -3,10 +3,10 @@
 {% block title %}{{ post.title }} | inzain.net{% endblock title %}
 
 {% block content %}
-<h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h3>
-<div class="byline">{{ post.pub_date }}</div>
-<br />
-{{ post.body|safe }}
+<h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a>
+  <div class="byline">{{ post.pub_date|date:"F j, Y" }}</div></h3>
+
+<div class="postbody">{{ post.body|safe }}</div>
 
 <p>&nbsp;</p>
 <h4>Comments</h4>

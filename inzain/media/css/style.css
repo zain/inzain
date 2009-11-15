@@ -276,6 +276,7 @@ form
   margin: 0px 0px 0px 30px;
   padding: 0;
   color: #000;
+  line-height: 1.4em;
 }
 
 #body .content .byline
@@ -284,13 +285,22 @@ form
   font-size: .9em;
   font-weight: normal;
   font-style:italic;
+  float: right;
+  padding-top: 3px;
 }
 
 #body .content p
 {
   margin: 0;
   padding: 0 0 1em;
-  line-height: 1.4em;
+}
+
+#body .content .postbody {
+    margin-top: 0.5em;
+}
+
+#body .content .readmore {
+    font-variant:small-caps;
 }
 
 #body .content .nodeFoot
@@ -372,6 +382,7 @@ h4
 #body h3 a
 {
   text-decoration: none;
+  color: #280000;
 }
 
 
@@ -746,4 +757,8 @@ ul
     padding-right: 0.3em;
     padding-bottom: 2px;
     border: none;
+}
+
+#dsq-content {
+    font-size: 0.85em !important;
 }
