@@ -762,3 +762,7 @@ ul
 #dsq-content {
     font-size: 0.85em !important;
 }
+
+.dsq-options {
+    display: none;
+}
