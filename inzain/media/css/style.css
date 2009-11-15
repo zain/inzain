@@ -763,6 +763,10 @@ ul
     font-size: 0.85em !important;
 }
 
-.dsq-options {
-    display: none;
+#dsq-content .dsq-options {
+    display: none !important;
+}
+
+#dsq-content .dsq-comment-header {
+    background: #FFEEC4 none repeat scroll 0 0 !important;
 }
